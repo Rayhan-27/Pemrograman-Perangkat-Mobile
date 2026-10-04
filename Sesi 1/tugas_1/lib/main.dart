@@ -23,7 +23,7 @@ class CounterPage extends StatefulWidget {
   const CounterPage({super.key});
 
   @override
-  State<CounterPage> createState() => _CounterPageState();
+  State<CounterPage> createState() => _CounterPageState(); //tanda "_" artinya private, hanya bisa diakses di file ini saja
 }
 
 class _CounterPageState extends State<CounterPage> {
@@ -31,24 +31,26 @@ class _CounterPageState extends State<CounterPage> {
 
   bool get _isEven => _counter % 2 == 0;
 
-  void _increment() => setState(() => _counter++);
+  void _increment() => setState(() => _counter++); 
+  //fungsi setState() digunakan untuk memberi tahu Flutter bahwa ada perubahan pada state, sehingga UI akan diperbarui
 
   void _decrement() {
     if (_counter == 0) {
       ScaffoldMessenger.of(context).hideCurrentSnackBar();
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Counter tidak boleh di bawah 0!')),
+        const SnackBar(content: Text('Counter tidak boleh di bawah 0!')), //muncul snackbar jika counter di bawah 0
       );
       return;
     }
     setState(() => _counter--);
   }
 
-  void _reset() => setState(() => _counter = 0);
+  void _reset() => setState(() => _counter = 0); 
 
   @override
   Widget build(BuildContext context) {
     final numberColor = _isEven ? Colors.blue : Colors.deepOrange;
+    // kondisi ? A : B artinya "kalau benar pakai A, kalau salah pakai B"
 
     return Scaffold(
       appBar: AppBar(
