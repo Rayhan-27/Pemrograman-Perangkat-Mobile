@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;font-family:'Plus Jakarta Sans',sans-serif;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-background": "#131b2e", "surface-container-highest": "#dae2fd", "on-tertiary-fixed-variant": "#783200", "tertiary-fixed": "#ffdbca", "on-primary-fixed-variant": "#00504a", "error": "#ba1a1a", "secondary-container": "#6df5e1", "primary-fixed": "#9cf2e8", "surface-bright": "#faf8ff", "inverse-surface": "#283044", "secondary": "#006b5f", "on-error": "#ffffff", "surface-container": "#eaedff", "on-primary-container": "#a3faef", "on-secondary-fixed-variant": "#005048", "on-primary": "#ffffff", "outline-variant": "#bdc9c6", "tertiary": "#893a00", "surface-container-low": "#f2f3ff", "on-surface": "#131b2e", "primary-container": "#0f766e", "surface-tint": "#006a63", "surface-variant": "#dae2fd", "on-secondary": "#ffffff", "on-primary-fixed": "#00201d", "on-secondary-container": "#006f64", "surface-dim": "#d2d9f4", "tertiary-container": "#af4c00", "surface-container-high": "#e2e7ff", "inverse-on-surface": "#eef0ff", "surface": "#faf8ff", "error-container": "#ffdad6", "on-tertiary-container": "#ffe6da", "on-tertiary": "#ffffff", "primary-fixed-dim": "#80d5cb", "on-secondary-fixed": "#00201c", "primary": "#005c55", "surface-container-lowest": "#ffffff", "on-surface-variant": "#3e4947", "tertiary-fixed-dim": "#ffb690", "on-tertiary-fixed": "#341100", "secondary-fixed": "#71f8e4", "on-error-container": "#93000a", "outline": "#6e7977", "inverse-primary": "#80d5cb", "background": "#faf8ff", "secondary-fixed-dim": "#4fdbc8" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-lg": "1.5rem", "gutter-desktop": "2rem", "space-md": "1rem", "space-xl": "2.5rem", "margin-desktop": "3rem", "gutter-tablet": "1.5rem", "margin": "1rem", "gutter": "1rem", "space-sm": "0.5rem", "margin-tablet": "2rem", "space-xs": "0.25rem" }, fontFamily: { "headline-sm": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"] }, fontSize: { "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "title-md": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }] } } } };</script></head><body class="bg-background font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs min-w-0"><button aria-label="Kembali" class="w-11 h-11 -ml-space-xs flex items-center justify-center rounded-full text-on-surface hover:text-primary transition-colors" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="Jelajah Nusantara Logo" class="h-7 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpzDORhY5od7GyuqXtiP2OEk0pZUZ-5AJuhqMDam61gySsdQlz0WH5dSUH441dCWQ9SBDlgbOMAnx6ezJK9Mu7berSaO1YO9up6EMDDcCqH851roVUT9MC-2Oo96uqaRYQ1Eagujm8isGaNo5py2jOeOsfdCKdU18WMVIb5ZKmwiLDLcLF29qGvZOUdCeHeuWTaOsqRv3KRKRP5rXvci0wsM9npSRwW3mollHZQCaKVcCShMte0YMn"/><h1 class="font-title-md text-on-surface truncate">Booking Form</h1></div><div class="flex items-center gap-space-xs flex-shrink-0"><button aria-label="Profil Pengguna" class="w-11 h-11 flex items-center justify-center rounded-full" type="button"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5UnsomqC8sKBDLKnwkXgLAfewOjdKhz5p67QkRS3rlO3TjuZldZ-k2HDjc0HWneHPIfbVrKBZDBL7vT1FVMOMIVT30KnREwtY4SIKfznM43O2c9hGlY9uAnwnGPVpGeOKbLVTThaQTRtqSgThpCCJzkmCvGMji4oEyRTeYSlVUbpIptX0VEpeW9JnStKRcLqwHLHuuOkPlZl2optz1HhYVtgcseA8mbMgHJnnr3HPEbxOawEArYQa"/></button></div></div></header><main class="flex flex-col relative w-full pt-16 pb-safe bg-surface min-h-screen"><div class="flex flex-col w-full pb-10">
+<!-- Status Mini Step Tracker -->
+<div class="px-margin pt-space-sm pb-space-xs">
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-sm text-label-sm">1</span>
+<span class="font-label-md text-label-md text-primary font-semibold">Data Pemesan</span>
+</div>
+<div class="h-0.5 w-8 bg-surface-container-highest"></div>
+<div class="flex items-center gap-space-xs opacity-60">
+<span class="w-6 h-6 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center font-label-sm text-label-sm">2</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Pembayaran</span>
+</div>
+<div class="h-0.5 w-8 bg-surface-container-highest"></div>
+<div class="flex items-center gap-space-xs opacity-60">
+<span class="w-6 h-6 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center font-label-sm text-label-sm">3</span>
+<span class="font-label-md text-label-md text-on-surface-variant">E-Tiket</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Package Summary Mini-Card -->
+<div class="px-margin my-space-sm">
+<div class="bg-surface-container-lowest rounded-xl shadow-md p-space-md flex gap-space-md items-center">
+<div class="relative w-24 h-24 rounded-lg overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Sun-drenched dramatic panoramic vista of Padar Island in Labuan Bajo Indonesia with turquoise bays, golden savannah ridges, vibrant blue tropical seas, and pristine Phinisi wooden schooner cruising under radiant tropical sunlight with lush nature" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvIhT5lm7d3siih91eT6jXwho3FK6-SxWONoJnGq81cVK351iQAWb8IQDClg8R3b7Y1-j5ObV8Riid2X_BePUgzbN1RNrQh20jSGVqP7eqL_q17Llpw1OzlwDmnYzMemAX_vrQif3-Ay3Pg64K1XPs9ZlMwEVSuwNtlzQl794sQi7_1JBFwK7VdFBhvG0fy22doWMKutj1mU7xfvx6Jbpgy9q5FWWNKRoNZ7hJjxNzJvq8vTCvYsVl"/>
+<span class="absolute top-1.5 left-1.5 px-2 py-0.5 rounded-full bg-primary/90 text-on-primary backdrop-blur-sm font-label-sm text-label-sm">
+          Best Seller
+        </span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">Nusa Tenggara Timur</span>
+</div>
+<h2 class="font-title-md text-title-md text-on-surface font-bold truncate mt-0.5">Labuan Bajo &amp; Pulau Padar</h2>
+<div class="flex items-center gap-2 mt-1">
+<span class="inline-flex items-center gap-1 font-body-sm text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px] text-primary">schedule</span>
+            4 Hari 3 Malam
+          </span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Liveaboard</span>
+</div>
+<div class="mt-2 flex items-baseline gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Mulai dari</span>
+<span class="font-label-lg text-label-lg text-primary font-bold">Rp 4.850.000</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/pax</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Form Content -->
+<form class="px-margin flex flex-col gap-space-lg" id="booking-form" onsubmit="event.preventDefault();">
+<!-- Section 1: Data Kontak Pemesan -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center gap-2">
+<span class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">person</span>
+</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Data Utama Pemesan</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tiket dan notifikasi konfirmasi akan dikirim ke kontak ini.</p>
+</div>
+</div>
+<!-- Field 1: Nama Lengkap -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold flex items-center justify-between" for="fullName">
+<span>Nama Lengkap Pemesan <span class="text-error">*</span></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px]">Sesuai KTP / Paspor</span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[20px] pointer-events-none">badge</span>
+<input class="w-full pl-10 pr-4 py-3 bg-surface-container-low rounded-lg font-body-md text-body-md text-on-surface placeholder-on-surface-variant/50 outline-none focus:bg-surface-bright focus:shadow-[0_0_0_2px_#005c55] transition-all" id="fullName" placeholder="cth. Arya Pratama" required="" type="text" value="Arya Pratama"/>
+</div>
+</div>
+<!-- Field 2: Email & WhatsApp (2-col grid) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- Email -->
+<div class="flex flex-col gap-1.5 min-w-0">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="email">
+            Email Aktif <span class="text-error">*</span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[20px] pointer-events-none">mail</span>
+<input class="w-full pl-10 pr-3 py-3 bg-surface-container-low rounded-lg font-body-md text-body-md text-on-surface placeholder-on-surface-variant/50 outline-none focus:bg-surface-bright focus:shadow-[0_0_0_2px_#005c55] transition-all truncate" id="email" placeholder="nama@domain.com" required="" type="email" value="arya.pratama@traveler.id"/>
+</div>
+</div>
+<!-- WhatsApp with +62 prefix -->
+<div class="flex flex-col gap-1.5 min-w-0">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="whatsapp">
+            Nomor WhatsApp <span class="text-error">*</span>
+</label>
+<div class="flex items-center bg-surface-container-low rounded-lg overflow-hidden focus-within:bg-surface-bright focus-within:shadow-[0_0_0_2px_#005c55] transition-all">
+<div class="flex items-center gap-1 px-3 py-3 bg-surface-container text-on-surface-variant font-label-md text-label-md border-r-0 select-none">
+<span class="font-bold text-on-surface">+62</span>
+</div>
+<input class="w-full px-3 py-3 bg-transparent font-body-md text-body-md text-on-surface placeholder-on-surface-variant/50 outline-none" id="whatsapp" placeholder="812 3456 7890" required="" type="tel" value="812 9845 2201"/>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 2: Detail Keberangkatan & Jumlah Peserta -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center gap-2">
+<span class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">calendar_month</span>
+</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Waktu &amp; Peserta</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tentukan jadwal pelayaran dan jumlah kawan perjalananmu.</p>
+</div>
+</div>
+<!-- Field 4: Tanggal Keberangkatan -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="departureDate">
+          Tanggal Keberangkatan <span class="text-error">*</span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-primary text-[22px] pointer-events-none">event_available</span>
+<input class="w-full pl-11 pr-10 py-3 bg-surface-container-low rounded-lg font-body-md text-body-md text-on-surface font-semibold cursor-pointer outline-none focus:shadow-[0_0_0_2px_#005c55]" id="departureDate" readonly="" type="text" value="25 Oktober 2025"/>
+<span class="material-symbols-outlined absolute right-3 text-on-surface-variant pointer-events-none">edit_calendar</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">wb_sunny</span>
+          Musim cerah terbaik untuk snorkeling dan trekking pulau Padar.
+        </p>
+</div>
+<!-- Field 3: Stepper Counter Peserta -->
+<div class="flex flex-col gap-1.5 pt-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold flex items-center justify-between">
+<span>Jumlah Peserta</span>
+<span class="font-body-sm text-body-sm text-primary font-bold">Rp 4.850.000 / pax</span>
+</label>
+<div class="flex items-center justify-between bg-surface-container-low p-2 rounded-xl">
+<div class="flex items-center gap-3 pl-2">
+<span class="material-symbols-outlined text-primary text-[24px]">group</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-semibold">Kapasitas Kabin</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Termasuk makan 3x &amp; gear snorkeling</p>
+</div>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-lowest p-1 rounded-lg shadow-sm">
+<button aria-label="Kurangi Peserta" class="w-9 h-9 rounded-lg flex items-center justify-center bg-surface-container hover:bg-surface-container-high active:scale-95 text-on-surface transition-all select-none" id="btn-decrement" type="button">
+<span class="material-symbols-outlined text-[20px]">remove</span>
+</button>
+<div class="min-w-[70px] text-center">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold" id="participant-count">2</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block -mt-1">Peserta</span>
+</div>
+<button aria-label="Tambah Peserta" class="w-9 h-9 rounded-lg flex items-center justify-center bg-primary text-on-primary hover:bg-primary-container active:scale-95 transition-all select-none" id="btn-increment" type="button">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+<div class="flex items-center gap-1.5 mt-1 px-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">info</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Maksimal 12 peserta per booking untuk menjaga kenyamanan liveaboard.</span>
+</div>
+</div>
+</div>
+<!-- Field 5: Pilihan Paket Kamar (Radio Cards) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center gap-2">
+<span class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">bed</span>
+</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Pilihan Paket Kamar</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Semua kabin ber-AC dengan kamar mandi dalam.</p>
+</div>
+</div>
+<div class="flex flex-col gap-3" id="cabin-selector">
+<!-- Option 1: Deluxe Ocean View -->
+<label class="cursor-pointer relative flex flex-col p-3.5 rounded-xl bg-surface-container-low transition-all cabin-option" data-extra="0" data-name="Deluxe Cabin with Ocean View">
+<input checked="" class="hidden cabin-radio" name="cabin" type="radio" value="deluxe"/>
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-start gap-3">
+<div class="w-5 h-5 rounded-full mt-0.5 bg-primary flex items-center justify-center text-on-primary radio-indicator">
+<span class="w-2 h-2 rounded-full bg-on-primary"></span>
+</div>
+<div>
+<p class="font-label-lg text-label-lg text-on-surface font-bold">Deluxe Cabin with Ocean View</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Jendela panorama langsung ke laut, Queen Bed, Water Heater.</p>
+<div class="flex items-center gap-2 mt-2">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm">Dek Utama</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm">AC Dingin</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col items-end flex-shrink-0">
+<span class="font-label-lg text-label-lg text-primary font-bold">+Rp 0</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Termasuk paket</span>
+</div>
+</div>
+</label>
+<!-- Option 2: Master Suite Balcony -->
+<label class="cursor-pointer relative flex flex-col p-3.5 rounded-xl bg-surface-container-low transition-all cabin-option" data-extra="850000" data-name="Master Suite Balcony">
+<input class="hidden cabin-radio" name="cabin" type="radio" value="suite"/>
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-start gap-3">
+<div class="w-5 h-5 rounded-full mt-0.5 bg-surface-container flex items-center justify-center text-on-surface-variant radio-indicator">
+<span class="w-2 h-2 rounded-full bg-transparent"></span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<p class="font-label-lg text-label-lg text-on-surface font-bold">Master Suite Balcony</p>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm font-bold">Favorit</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Balkon privat 180°, bathtub pemandangan samudra, King Bed mewah.</p>
+<div class="flex items-center gap-2 mt-2">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm">Dek Atas</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm">Private Balcony</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col items-end flex-shrink-0">
+<span class="font-label-lg text-label-lg text-tertiary font-bold">+Rp 850.000</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/kabin</span>
+</div>
+</div>
+</label>
+</div>
+</div>
+<!-- Field 6: Catatan Khusus / Permintaan Diet -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center gap-2">
+<span class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">restaurant</span>
+</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Catatan Khusus &amp; Diet</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Beri tahu kami kebutuhan khusus Anda selama trip.</p>
+</div>
+</div>
+<div class="flex flex-col gap-1.5 mt-1">
+<textarea class="w-full p-3.5 bg-surface-container-low rounded-lg font-body-md text-body-md text-on-surface placeholder-on-surface-variant/50 outline-none focus:bg-surface-bright focus:shadow-[0_0_0_2px_#005c55] transition-all resize-none" id="notes" placeholder="cth. 1 peserta vegetarian tanpa seafood, minta jemputan di Hotel Sylvia pukul 07.30 WITA..." rows="3"></textarea>
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[15px]">tips_and_updates</span>
+<span class="font-body-sm text-body-sm">Koki di kapal kami siap menyediakan sajian halal, vegan, atau bebas alergen.</span>
+</div>
+</div>
+</div>
+<!-- Section 4: Rincian Biaya (Price Breakdown) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-2 border-b-0">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">receipt_long</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Rincian Biaya</h3>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+          Transparan
+        </span>
+</div>
+<div class="flex flex-col gap-2.5 font-body-md text-body-md">
+<!-- Base package calculation -->
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="text-on-surface">Harga Paket Trip</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant" id="label-package-calc">2 Peserta x Rp 4.850.000</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold" id="price-package-total">Rp 9.700.000</span>
+</div>
+<!-- Cabin upgrade extra -->
+<div class="flex items-center justify-between hidden" id="row-cabin-extra">
+<div class="flex flex-col">
+<span class="text-on-surface">Upgrade Master Suite</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Tambahan kabin privat</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold" id="price-cabin-extra">Rp 850.000</span>
+</div>
+<!-- Travel Insurance -->
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="text-on-surface">Biaya Asuransi Perjalanan</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Proteksi Bahari &amp; Evakuasi</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Rp 150.000</span>
+</div>
+<!-- Service Tax -->
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="text-on-surface">Pajak Pelayanan (5%)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Retribusi Konservasi TN Komodo</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold" id="price-tax">Rp 492.500</span>
+</div>
+<!-- Promo Explorer Discount -->
+<div class="flex items-center justify-between text-secondary">
+<div class="flex flex-col">
+<span class="font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">sell</span>
+              Diskon Promo Explorer
+            </span>
+<span class="font-body-sm text-body-sm text-secondary/80">Kode: WANDERLUST2025</span>
+</div>
+<span class="font-label-md text-label-md font-bold">-Rp 500.000</span>
+</div>
+</div>
+<!-- Total Highlight Card -->
+<div class="mt-2 p-space-md rounded-xl bg-primary-container text-on-primary-container flex items-center justify-between shadow-sm">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-primary-container/80 font-bold block">TOTAL PEMBAYARAN</span>
+<span class="font-body-sm text-body-sm text-on-primary-container/90">Sudah termasuk pajak &amp; asuransi</span>
+</div>
+<div class="text-right">
+<span class="font-headline-md text-headline-md text-on-primary font-extrabold tracking-tight" id="total-payment">Rp 9.842.500</span>
+</div>
+</div>
+</div>
+<!-- Security & Trust Badge -->
+<div class="flex items-center justify-center gap-2 p-3 bg-surface-container-low rounded-xl text-center">
+<span class="material-symbols-outlined text-primary text-[20px]">verified_user</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">
+        Jaminan Transaksi Aman &amp; Terverifikasi ASITA (No. 402/ASITA-NTT/2024)
+      </span>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-col gap-space-sm pt-2">
+<!-- Primary CTA: Konfirmasi & Lanjut Pembayaran -->
+<button class="w-full py-4 px-6 rounded-full bg-primary hover:bg-primary-container active:scale-[0.99] text-on-primary font-label-lg text-label-lg font-bold shadow-md flex items-center justify-center gap-2 transition-all" id="btn-confirm-payment" onclick="handlePaymentPush()" type="button">
+<span>Konfirmasi &amp; Lanjut Pembayaran</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+<!-- Secondary Ghost CTA: Batal & Kembali -->
+<button class="w-full py-3.5 px-6 rounded-full bg-transparent hover:bg-surface-container active:bg-surface-container-high text-primary font-label-lg text-label-lg font-semibold flex items-center justify-center gap-1.5 transition-all" onclick="if(window.history.length &gt; 1){history.back();} else {alert('Kembali ke Halaman Detail Trip');}" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+<span>Batal &amp; Kembali</span>
+</button>
+</div>
+</form>
+</div>
+<script>
+  (function initBookingLogic() {
+    var count = 2;
+    var baseRate = 4850000;
+    var insurance = 150000;
+    var promoDiscount = 500000;
+    var cabinExtra = 0;
+
+    var countDisplay = document.getElementById('participant-count');
+    var btnInc = document.getElementById('btn-increment');
+    var btnDec = document.getElementById('btn-decrement');
+    var packageCalcLabel = document.getElementById('label-package-calc');
+    var packageTotalDisplay = document.getElementById('price-package-total');
+    var rowCabinExtra = document.getElementById('row-cabin-extra');
+    var priceCabinExtra = document.getElementById('price-cabin-extra');
+    var taxDisplay = document.getElementById('price-tax');
+    var totalPaymentDisplay = document.getElementById('total-payment');
+    var cabinOptions = document.querySelectorAll('.cabin-option');
+
+    function formatRupiah(num) {
+      return 'Rp ' + num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+    }
+
+    function calculateTotal() {
+      var subtotalTrip = count * baseRate;
+      var taxableBase = subtotalTrip + cabinExtra;
+      var serviceTax = Math.round(taxableBase * 0.05);
+      var grandTotal = taxableBase + insurance + serviceTax - promoDiscount;
+
+      if (grandTotal < 0) grandTotal = 0;
+
+      packageCalcLabel.textContent = count + ' Peserta x ' + formatRupiah(baseRate);
+      packageTotalDisplay.textContent = formatRupiah(subtotalTrip);
+      taxDisplay.textContent = formatRupiah(serviceTax);
+      totalPaymentDisplay.textContent = formatRupiah(grandTotal);
+
+      if (cabinExtra > 0) {
+        rowCabinExtra.classList.remove('hidden');
+        priceCabinExtra.textContent = formatRupiah(cabinExtra);
+      } else {
+        rowCabinExtra.classList.add('hidden');
+      }
+    }
+
+    btnInc.addEventListener('click', function() {
+      if (count < 12) {
+        count++;
+        countDisplay.textContent = count;
+        calculateTotal();
+      }
+    });
+
+    btnDec.addEventListener('click', function() {
+      if (count > 1) {
+        count--;
+        countDisplay.textContent = count;
+        calculateTotal();
+      }
+    });
+
+    cabinOptions.forEach(function(card) {
+      card.addEventListener('click', function() {
+        var radio = card.querySelector('input[type="radio"]');
+        radio.checked = true;
+        cabinExtra = parseInt(card.getAttribute('data-extra'), 10) || 0;
+
+        cabinOptions.forEach(function(c) {
+          var dotContainer = c.querySelector('.radio-indicator');
+          var innerDot = dotContainer.querySelector('span');
+          if (c === card) {
+            c.classList.add('bg-surface-container');
+            dotContainer.classList.add('bg-primary', 'text-on-primary');
+            dotContainer.classList.remove('bg-surface-container', 'text-on-surface-variant');
+            innerDot.classList.add('bg-on-primary');
+            innerDot.classList.remove('bg-transparent');
+          } else {
+            c.classList.remove('bg-surface-container');
+            dotContainer.classList.remove('bg-primary', 'text-on-primary');
+            dotContainer.classList.add('bg-surface-container', 'text-on-surface-variant');
+            innerDot.classList.remove('bg-on-primary');
+            innerDot.classList.add('bg-transparent');
+          }
+        });
+
+        calculateTotal();
+      });
+    });
+
+    window.handlePaymentPush = function() {
+      var nameInput = document.getElementById('fullName');
+      if (!nameInput.value.trim()) {
+        nameInput.focus();
+        alert('Mohon isi nama lengkap pemesan terlebih dahulu.');
+        return;
+      }
+
+      var totalText = totalPaymentDisplay.textContent;
+      // Micro interaction feedback before navigator routing
+      var btn = document.getElementById('btn-confirm-payment');
+      btn.innerHTML = '<span class="material-symbols-outlined animate-spin text-[20px]">progress_activity</span><span>Memproses Pemesanan...</span>';
+      btn.disabled = true;
+
+      setTimeout(function() {
+        alert('Pemesanan Terverifikasi! Melanjutkan ke Payment Gateway untuk tagihan sebesar ' + totalText + '.');
+        btn.innerHTML = '<span>Konfirmasi & Lanjut Pembayaran</span><span class="material-symbols-outlined text-[20px]">arrow_forward</span>';
+        btn.disabled = false;
+      }, 700);
+    };
+
+    calculateTotal();
+  })();
+</script></main></body></html>

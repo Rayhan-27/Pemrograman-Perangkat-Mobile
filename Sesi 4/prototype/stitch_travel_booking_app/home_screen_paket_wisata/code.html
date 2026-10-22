@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;font-family:'Plus Jakarta Sans',sans-serif;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-background": "#131b2e", "surface-container-highest": "#dae2fd", "on-tertiary-fixed-variant": "#783200", "tertiary-fixed": "#ffdbca", "on-primary-fixed-variant": "#00504a", "error": "#ba1a1a", "secondary-container": "#6df5e1", "primary-fixed": "#9cf2e8", "surface-bright": "#faf8ff", "inverse-surface": "#283044", "secondary": "#006b5f", "on-error": "#ffffff", "surface-container": "#eaedff", "on-primary-container": "#a3faef", "on-secondary-fixed-variant": "#005048", "on-primary": "#ffffff", "outline-variant": "#bdc9c6", "tertiary": "#893a00", "surface-container-low": "#f2f3ff", "on-surface": "#131b2e", "primary-container": "#0f766e", "surface-tint": "#006a63", "surface-variant": "#dae2fd", "on-secondary": "#ffffff", "on-primary-fixed": "#00201d", "on-secondary-container": "#006f64", "surface-dim": "#d2d9f4", "tertiary-container": "#af4c00", "surface-container-high": "#e2e7ff", "inverse-on-surface": "#eef0ff", "surface": "#faf8ff", "error-container": "#ffdad6", "on-tertiary-container": "#ffe6da", "on-tertiary": "#ffffff", "primary-fixed-dim": "#80d5cb", "on-secondary-fixed": "#00201c", "primary": "#005c55", "surface-container-lowest": "#ffffff", "on-surface-variant": "#3e4947", "tertiary-fixed-dim": "#ffb690", "on-tertiary-fixed": "#341100", "secondary-fixed": "#71f8e4", "on-error-container": "#93000a", "outline": "#6e7977", "inverse-primary": "#80d5cb", "background": "#faf8ff", "secondary-fixed-dim": "#4fdbc8" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-lg": "1.5rem", "gutter-desktop": "2rem", "space-md": "1rem", "space-xl": "2.5rem", "margin-desktop": "3rem", "gutter-tablet": "1.5rem", "margin": "1rem", "gutter": "1rem", "space-sm": "0.5rem", "margin-tablet": "2rem", "space-xs": "0.25rem" }, fontFamily: { "headline-sm": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"] }, fontSize: { "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "title-md": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }] } } } };</script></head><body class="bg-background font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="Jelajah Nusantara Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpzDORhY5od7GyuqXtiP2OEk0pZUZ-5AJuhqMDam61gySsdQlz0WH5dSUH441dCWQ9SBDlgbOMAnx6ezJK9Mu7berSaO1YO9up6EMDDcCqH851roVUT9MC-2Oo96uqaRYQ1Eagujm8isGaNo5py2jOeOsfdCKdU18WMVIb5ZKmwiLDLcLF29qGvZOUdCeHeuWTaOsqRv3KRKRP5rXvci0wsM9npSRwW3mollHZQCaKVcCShMte0YMn"/><div class="flex flex-col min-w-0"><span class="font-label-sm text-primary uppercase tracking-wider truncate">Jelajah Nusantara</span><span class="font-title-md text-on-surface truncate">Beranda</span></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><button aria-label="Notifikasi" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[24px]">notifications</span></button><button aria-label="Profil Pengguna" class="w-11 h-11 flex items-center justify-center rounded-full" type="button"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5UnsomqC8sKBDLKnwkXgLAfewOjdKhz5p67QkRS3rlO3TjuZldZ-k2HDjc0HWneHPIfbVrKBZDBL7vT1FVMOMIVT30KnREwtY4SIKfznM43O2c9hGlY9uAnwnGPVpGeOKbLVTThaQTRtqSgThpCCJzkmCvGMji4oEyRTeYSlVUbpIptX0VEpeW9JnStKRcLqwHLHuuOkPlZl2optz1HhYVtgcseA8mbMgHJnnr3HPEbxOawEArYQa"/></button></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Welcome Greeting & Quick Logout Header Bar -->
+<section class="px-margin pt-space-md pb-space-sm flex items-center justify-between gap-space-sm">
+<div class="flex flex-col min-w-0">
+<span class="font-body-sm text-on-surface-variant flex items-center gap-1">
+        Eksplorasi Keindahan Indonesia
+      </span>
+<h1 class="font-headline-lg-mobile text-on-surface tracking-tight truncate">
+        Halo, Petualang! <span class="inline-block animate-bounce">👋</span>
+</h1>
+</div>
+<!-- Prominent Logout Action -->
+<button aria-label="Keluar dari akun" class="flex items-center gap-1.5 px-3 py-2 rounded-full bg-error-container text-on-error-container hover:opacity-90 active:scale-95 transition-all shadow-sm flex-shrink-0 cursor-pointer" id="logout-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">logout</span>
+<span class="font-label-sm font-semibold tracking-wide">Keluar</span>
+</button>
+</section>
+<!-- Interactive Search & Filter Bar -->
+<section class="px-margin py-space-xs">
+<div class="flex items-center gap-space-sm bg-surface-container-lowest rounded-full px-4 py-3 shadow-[0_4px_16px_rgba(0,92,85,0.06)]">
+<span class="material-symbols-outlined text-primary text-[22px] flex-shrink-0">search</span>
+<input class="bg-transparent w-full text-on-surface font-body-md placeholder:text-outline focus:outline-none" id="search-input" placeholder="Cari destinasi, pulau, atau aktivitas..." type="search"/>
+<button aria-label="Filter Hasil" class="w-8 h-8 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center flex-shrink-0 active:scale-90 transition-transform" type="button">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+</div>
+</section>
+<!-- Archipelago Category Pill Carousels -->
+<section class="py-space-sm">
+<div class="flex items-center gap-2 overflow-x-auto px-margin scrollbar-none no-scrollbar">
+<button class="category-chip px-4 py-2 rounded-full bg-primary text-on-primary font-label-md flex items-center gap-1.5 shadow-sm flex-shrink-0 active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">all_inclusive</span>
+<span>Semua</span>
+</button>
+<button class="category-chip px-4 py-2 rounded-full bg-surface-container-low text-on-surface font-label-md hover:bg-surface-container flex items-center gap-1.5 flex-shrink-0 active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-primary text-[18px]">beach_access</span>
+<span>Pantai &amp; Pulau</span>
+</button>
+<button class="category-chip px-4 py-2 rounded-full bg-surface-container-low text-on-surface font-label-md hover:bg-surface-container flex items-center gap-1.5 flex-shrink-0 active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-primary text-[18px]">landscape</span>
+<span>Pegunungan</span>
+</button>
+<button class="category-chip px-4 py-2 rounded-full bg-surface-container-low text-on-surface font-label-md hover:bg-surface-container flex items-center gap-1.5 flex-shrink-0 active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-primary text-[18px]">temple_buddhist</span>
+<span>Budaya &amp; Adat</span>
+</button>
+<button class="category-chip px-4 py-2 rounded-full bg-surface-container-low text-on-surface font-label-md hover:bg-surface-container flex items-center gap-1.5 flex-shrink-0 active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-primary text-[18px]">scuba_diving</span>
+<span>Diving</span>
+</button>
+</div>
+</section>
+<!-- Curated Promo Banner Accent -->
+<section class="px-margin my-space-xs">
+<div class="relative overflow-hidden rounded-xl bg-gradient-to-r from-primary-container to-secondary p-4 text-on-primary shadow-md flex items-center justify-between">
+<div class="flex flex-col z-10 max-w-[70%]">
+<div class="inline-flex items-center gap-1 bg-white/20 backdrop-blur-md rounded-full px-2 py-0.5 w-max mb-1">
+<span class="material-symbols-outlined text-[14px] text-tertiary-fixed">celebration</span>
+<span class="font-label-sm text-white">Promo Musim Liburan</span>
+</div>
+<h2 class="font-headline-sm text-white tracking-tight leading-snug">Jelajahi Surga Timur</h2>
+<p class="font-body-sm text-on-primary-container opacity-95">Diskon s/d 25% eksplorasi Raja Ampat &amp; Alor.</p>
+</div>
+<div class="z-10 flex-shrink-0">
+<button class="bg-tertiary-container text-on-tertiary-container font-label-md px-3.5 py-2 rounded-full shadow-sm active:scale-95 transition-transform flex items-center gap-1" type="button">
+<span>Klaim</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<!-- Ambient Decorative Rings -->
+<div class="absolute -right-6 -bottom-6 w-28 h-28 rounded-full bg-white/10 pointer-events-none blur-sm"></div>
+</div>
+</section>
+<!-- Section Title -->
+<section class="px-margin pt-space-md pb-space-xs flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-5 rounded-full bg-primary inline-block"></span>
+<h2 class="font-title-md text-on-surface">Paket Wisata Pilihan</h2>
+</div>
+<span class="font-label-md text-primary font-semibold">5 Paket Tersedia</span>
+</section>
+<!-- Paket Wisata Vertical Feed -->
+<section class="px-margin flex flex-col gap-4 pb-space-md" id="tour-cards-container">
+<!-- Card 1: Labuan Bajo -->
+<article class="tour-card bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_16px_rgba(15,23,42,0.06)] flex flex-col transition-transform active:scale-[0.99]" data-title="Labuan Bajo &amp; Pulau Padar 4H3M">
+<div class="relative h-48 w-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Stunning aerial view of Padar Island in Komodo National Park, Flores Indonesia, with green rugged volcanic hills surrounded by three turquoise crescent bays under vibrant golden hour light with traditional wooden Phinisi boats sailing serenely on deep teal waters." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFMAGHI1hx3FsUiMFSNXXTC0sEXXbH9UWWadbPV2yO8p1KcF5z8lCXj7Qnbxzw-ikhPjDMXqkvlnwlRA5ahWY-PnU_hvIrLbSho7UeXLF_m338xJa7Q0fLBuAK_ihuUfG4g_oivfuVmhz34kOx2LKK90yGRJ7xh-BRCxL9KBwJCd69Txk-AVueXkscxJaXmpVrAuvQXBKVKIj0Mzx7NgweEBUk9KlNmEYAH6fcpciNoTzjUsqpHbx5"/>
+<!-- Floating Badges Top Row -->
+<div class="absolute top-3 inset-x-3 flex items-center justify-between">
+<span class="bg-tertiary-container text-on-tertiary-container px-2.5 py-1 rounded-full font-label-sm uppercase tracking-wider flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">local_fire_department</span>
+            Populer
+          </span>
+<div class="bg-surface/90 backdrop-blur-md px-2.5 py-1 rounded-full flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-amber-500 text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-md text-on-surface font-bold">4.9</span>
+<span class="font-label-sm text-on-surface-variant">(1.2k)</span>
+</div>
+</div>
+<!-- Duration Chip Bottom Left -->
+<div class="absolute bottom-3 left-3 bg-inverse-surface/85 backdrop-blur-sm text-inverse-on-surface px-2.5 py-1 rounded-lg font-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+          4 Hari 3 Malam
+        </div>
+</div>
+<div class="p-4 flex flex-col gap-3">
+<div>
+<div class="flex items-center gap-1 text-primary font-label-sm font-semibold mb-1">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+<span>Nusa Tenggara Timur</span>
+</div>
+<h3 class="font-title-md text-on-surface font-bold leading-tight">Labuan Bajo &amp; Pulau Padar 4H3M</h3>
+</div>
+<!-- Facilities Pill Badges -->
+<div class="flex flex-wrap gap-1.5">
+<span class="inline-flex items-center gap-1 bg-surface-container-high text-on-surface px-2 py-0.5 rounded font-body-sm text-[11px]">
+<span class="material-symbols-outlined text-[14px] text-primary">sailing</span>
+            Liveaboard Phinisi
+          </span>
+<span class="inline-flex items-center gap-1 bg-surface-container-high text-on-surface px-2 py-0.5 rounded font-body-sm text-[11px]">
+<span class="material-symbols-outlined text-[14px] text-primary">scuba_diving</span>
+            Snorkeling Manta Point
+          </span>
+<span class="inline-flex items-center gap-1 bg-surface-container-high text-on-surface px-2 py-0.5 rounded font-body-sm text-[11px]">
+<span class="material-symbols-outlined text-[14px] text-primary">restaurant</span>
+            All Meals Inc.
+          </span>
+</div>
+<div class="pt-2 flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-on-surface-variant">Mulai dari</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-sm text-primary font-bold">Rp 4.850.000</span>
+<span class="font-label-sm text-outline">/pax</span>
+</div>
+</div>
+<button class="px-4 py-2.5 rounded-full bg-primary text-on-primary font-label-md hover:bg-primary-container active:scale-95 transition-all shadow-sm flex items-center gap-1 cursor-pointer" onclick="pushDetail('pkg-001', 'Labuan Bajo &amp; Pulau Padar 4H3M', 4850000)" type="button">
+<span>Lihat Detail</span>
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 2: Raja Ampat -->
+<article class="tour-card bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_16px_rgba(15,23,42,0.06)] flex flex-col transition-transform active:scale-[0.99]" data-title="Eksotisme Raja Ampat &amp; Wayag 5H4M">
+<div class="relative h-48 w-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Pristine limestone karst islands of Wayag in Raja Ampat Papua, tropical emerald lagoons, ultra crystal clear coral reef water, lush jungle-topped formations, sunny sky with soft white clouds, tropical paradise aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxhhQDO5cwPEe0B-Z4I-5XWxf_yR3JcdzZvlUTRqukDeTHPzvBBZ7LXgQnDcbEUmQ2zBm_-a9vsWZSx7RgOI1ddNs5nfTIfg-eOu1E4yiLFkmvj_6-hjwrlXP8ZeUbeNeCTUzD02hdt505iAfwUBsD8RwPkqYKtn9y-I5Ml7Zp2hGUUhueOhRUYohCjX0sJG8LZRvlUoCQ5snhjyXbRtsVthchkS0Haxh0J39VW2JWhUulSXPVuQpT"/>
+<div class="absolute top-3 inset-x-3 flex items-center justify-between">
+<span class="bg-secondary text-on-secondary px-2.5 py-1 rounded-full font-label-sm uppercase tracking-wider flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+            Best Seller
+          </span>
+<div class="bg-surface/90 backdrop-blur-md px-2.5 py-1 rounded-full flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-amber-500 text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-md text-on-surface font-bold">5.0</span>
+<span class="font-label-sm text-on-surface-variant">(840)</span>
+</div>
+</div>
+<div class="absolute bottom-3 left-3 bg-inverse-surface/85 backdrop-blur-sm text-inverse-on-surface px-2.5 py-1 rounded-lg font-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+          5 Hari 4 Malam
+        </div>
+</div>
+<div class="p-4 flex flex-col gap-3">
+<div>
+<div class="flex items-center gap-1 text-primary font-label-sm font-semibold mb-1">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+<span>Papua Barat Daya</span>
+</div>
+<h3 class="font-title-md text-on-surface font-bold leading-tight">Eksotisme Raja Ampat &amp; Wayag 5H4M</h3>
+</div>
+<div class="flex flex-wrap gap-1.5">
+<span class="inline-flex items-center gap-1 bg-surface-container-high text-on-surface px-2 py-0.5 rounded font-body-sm text-[11px]">
+<span class="material-symbols-outlined text-[14px] text-primary">kayaking</span>
+            Speedboat Eksplorasi
+          </span>
+<span class="inline-flex items-center gap-1 bg-surface-container-high text-on-surface px-2 py-0.5 rounded font-body-sm text-[11px]">
+<span class="material-symbols-outlined text-[14px] text-primary">scuba_diving</span>
+            Diving &amp; Karst Snorkel
+          </span>
+<span class="inline-flex items-center gap-1 bg-surface-container-high text-on-surface px-2 py-0.5 rounded font-body-sm text-[11px]">
+<span class="material-symbols-outlined text-[14px] text-primary">camera</span>
+            Dokumentasi Drone
+          </span>
+</div>
+<div class="pt-2 flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-on-surface-variant">Mulai dari</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-sm text-primary font-bold">Rp 9.200.000</span>
+<span class="font-label-sm text-outline">/pax</span>
+</div>
+</div>
+<button class="px-4 py-2.5 rounded-full bg-primary text-on-primary font-label-md hover:bg-primary-container active:scale-95 transition-all shadow-sm flex items-center gap-1 cursor-pointer" onclick="pushDetail('pkg-002', 'Eksotisme Raja Ampat &amp; Wayag 5H4M', 9200000)" type="button">
+<span>Lihat Detail</span>
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 3: Bromo & Madakaripura -->
+<article class="tour-card bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_16px_rgba(15,23,42,0.06)] flex flex-col transition-transform active:scale-[0.99]" data-title="Magical Sunrise Bromo &amp; Madakaripura 3H2M">
+<div class="relative h-48 w-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Spectacular sunrise overlooking Mount Bromo, Batok, and Semeru caldera in East Java, sea of sand filled with morning mist, dramatic orange and violet morning sky, rugged volcanic landscapes." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcPg1Zv2SxW_f6QKXYxCXYhm01GCy9OeblWC-zwV2FhuNGseeQ1L2pNNNTeNcB5vJQQsEtOHwgQ-x7IsulpJqodw0Gjyt57GhPh7PLnDtcJkxePFeR7dUg216-MHBZEIIwwdW4tMreO5Xy7saapIebIScQlMuStHa8DHLwXPVhShuLf_dJK9jfkrwYO7COBAVYg70rqifiYvJ7KiDrxTAceCKtKQqZvodwbtIGSQY8AHuhUQlGSIfs"/>
+<div class="absolute top-3 inset-x-3 flex items-center justify-between">
+<span class="bg-primary-container text-on-primary px-2.5 py-1 rounded-full font-label-sm uppercase tracking-wider flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">thumb_up</span>
+            Favorit
+          </span>
+<div class="bg-surface/90 backdrop-blur-md px-2.5 py-1 rounded-full flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-amber-500 text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-md text-on-surface font-bold">4.8</span>
+<span class="font-label-sm text-on-surface-variant">(2.1k)</span>
+</div>
+</div>
+<div class="absolute bottom-3 left-3 bg-inverse-surface/85 backdrop-blur-sm text-inverse-on-surface px-2.5 py-1 rounded-lg font-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+          3 Hari 2 Malam
+        </div>
+</div>
+<div class="p-4 flex flex-col gap-3">
+<div>
+<div class="flex items-center gap-1 text-primary font-label-sm font-semibold mb-1">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+<span>Jawa Timur</span>
+</div>
+<h3 class="font-title-md text-on-surface font-bold leading-tight">Magical Sunrise Bromo &amp; Madakaripura 3H2M</h3>
+</div>
+<div class="flex flex-wrap gap-1.5">
+<span class="inline-flex items-center gap-1 bg-surface-container-high text-on-surface px-2 py-0.5 rounded font-body-sm text-[11px]">
+<span class="material-symbols-outlined text-[14px] text-primary">directions_car</span>
+            Jeep 4x4 Tour
+          </span>
+<span class="inline-flex items-center gap-1 bg-surface-container-high text-on-surface px-2 py-0.5 rounded font-body-sm text-[11px]">
+<span class="material-symbols-outlined text-[14px] text-primary">waterfall_chart</span>
+            Air Terjun Madakaripura
+          </span>
+<span class="inline-flex items-center gap-1 bg-surface-container-high text-on-surface px-2 py-0.5 rounded font-body-sm text-[11px]">
+<span class="material-symbols-outlined text-[14px] text-primary">cabin</span>
+            Hotel Bromo Permai
+          </span>
+</div>
+<div class="pt-2 flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-on-surface-variant">Mulai dari</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-sm text-primary font-bold">Rp 1.950.000</span>
+<span class="font-label-sm text-outline">/pax</span>
+</div>
+</div>
+<button class="px-4 py-2.5 rounded-full bg-primary text-on-primary font-label-md hover:bg-primary-container active:scale-95 transition-all shadow-sm flex items-center gap-1 cursor-pointer" onclick="pushDetail('pkg-003', 'Magical Sunrise Bromo &amp; Madakaripura 3H2M', 1950000)" type="button">
+<span>Lihat Detail</span>
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 4: Tana Toraja -->
+<article class="tour-card bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_16px_rgba(15,23,42,0.06)] flex flex-col transition-transform active:scale-[0.99]" data-title="Wisata Budaya &amp; Alam Tana Toraja 4H3M">
+<div class="relative h-48 w-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Traditional Tongkonan houses in Tana Toraja South Sulawesi with saddle-backed boat-shaped roofs, carved wooden pillars, surrounded by verdant rice terraces and misty highlands under gentle tropical morning light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBEP-2zt_adPsJgWUxFRT2tIoUdF7ilLXebkhvDh1da6DTCabD5tHo5G7Sv8uKIYULNba77bnU8laPVmbnB7g-qptL9BibCjInWfoLuEcJMPwYycr6dHrCI7vPk2MSF6DdTCpbFZI7rDPRMh3d8mgS9AoMgkHWEbYs7P0G9XfbyJlBxnaWjclUK2cOYRAVxPYZWGH2ZXfmSJyMurSTL9kgjGybTjL4gkt7Aj2XcEKI_onymk1HECzM"/>
+<div class="absolute top-3 inset-x-3 flex items-center justify-between">
+<span class="bg-tertiary text-on-tertiary px-2.5 py-1 rounded-full font-label-sm uppercase tracking-wider flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">museum</span>
+            Budaya
+          </span>
+<div class="bg-surface/90 backdrop-blur-md px-2.5 py-1 rounded-full flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-amber-500 text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-md text-on-surface font-bold">4.9</span>
+<span class="font-label-sm text-on-surface-variant">(620)</span>
+</div>
+</div>
+<div class="absolute bottom-3 left-3 bg-inverse-surface/85 backdrop-blur-sm text-inverse-on-surface px-2.5 py-1 rounded-lg font-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+          4 Hari 3 Malam
+        </div>
+</div>
+<div class="p-4 flex flex-col gap-3">
+<div>
+<div class="flex items-center gap-1 text-primary font-label-sm font-semibold mb-1">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+<span>Sulawesi Selatan</span>
+</div>
+<h3 class="font-title-md text-on-surface font-bold leading-tight">Wisata Budaya &amp; Alam Tana Toraja 4H3M</h3>
+</div>
+<div class="flex flex-wrap gap-1.5">
+<span class="inline-flex items-center gap-1 bg-surface-container-high text-on-surface px-2 py-0.5 rounded font-body-sm text-[11px]">
+<span class="material-symbols-outlined text-[14px] text-primary">cottage</span>
+            Desa Kete Kesu
+          </span>
+<span class="inline-flex items-center gap-1 bg-surface-container-high text-on-surface px-2 py-0.5 rounded font-body-sm text-[11px]">
+<span class="material-symbols-outlined text-[14px] text-primary">diversity_3</span>
+            Pemandu Budaya Lokal
+          </span>
+<span class="inline-flex items-center gap-1 bg-surface-container-high text-on-surface px-2 py-0.5 rounded font-body-sm text-[11px]">
+<span class="material-symbols-outlined text-[14px] text-primary">coffee</span>
+            Eksplorasi Kopi Toraja
+          </span>
+</div>
+<div class="pt-2 flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-on-surface-variant">Mulai dari</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-sm text-primary font-bold">Rp 3.400.000</span>
+<span class="font-label-sm text-outline">/pax</span>
+</div>
+</div>
+<button class="px-4 py-2.5 rounded-full bg-primary text-on-primary font-label-md hover:bg-primary-container active:scale-95 transition-all shadow-sm flex items-center gap-1 cursor-pointer" onclick="pushDetail('pkg-004', 'Wisata Budaya &amp; Alam Tana Toraja 4H3M', 3400000)" type="button">
+<span>Lihat Detail</span>
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 5: Danau Toba & Samosir -->
+<article class="tour-card bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_16px_rgba(15,23,42,0.06)] flex flex-col transition-transform active:scale-[0.99]" data-title="Pesona Danau Toba &amp; Samosir Heritage 3H2M">
+<div class="relative h-48 w-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Serene panoramic view of Lake Toba in North Sumatra from Tele viewpoint, sparkling blue volcanic crater lake with lush green ridges of Samosir island under warm afternoon sunlight and gentle clouds." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZ2yiBya9NqOV2uheYI3Lk28TVhKTbIdor6PguIocYIPH4OK6VjDtdamV6DBa0PsGTC_NwjIwWVJ6n0apF0fJgcV6-qM8weDPPcCrGxx1Hid6pvVKpzWJ521TvYD9Bx3KLwSHqXPxqLCEELyOo8i-o_hXJw5HLdk3Ud1Ci5-IR4eILlYSycljkuQ-1UXlJbkzxdyx33ZNuZhkeLgMyRqt9izX-IOsZrLBbHT2pPKGZnKH-UtxljkUF"/>
+<div class="absolute top-3 inset-x-3 flex items-center justify-between">
+<span class="bg-surface-container-highest text-on-surface px-2.5 py-1 rounded-full font-label-sm font-semibold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-primary text-[14px]">eco</span>
+            Warisan UNESCO
+          </span>
+<div class="bg-surface/90 backdrop-blur-md px-2.5 py-1 rounded-full flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-amber-500 text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-md text-on-surface font-bold">4.7</span>
+<span class="font-label-sm text-on-surface-variant">(950)</span>
+</div>
+</div>
+<div class="absolute bottom-3 left-3 bg-inverse-surface/85 backdrop-blur-sm text-inverse-on-surface px-2.5 py-1 rounded-lg font-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+          3 Hari 2 Malam
+        </div>
+</div>
+<div class="p-4 flex flex-col gap-3">
+<div>
+<div class="flex items-center gap-1 text-primary font-label-sm font-semibold mb-1">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+<span>Sumatera Utara</span>
+</div>
+<h3 class="font-title-md text-on-surface font-bold leading-tight">Pesona Danau Toba &amp; Samosir Heritage 3H2M</h3>
+</div>
+<div class="flex flex-wrap gap-1.5">
+<span class="inline-flex items-center gap-1 bg-surface-container-high text-on-surface px-2 py-0.5 rounded font-body-sm text-[11px]">
+<span class="material-symbols-outlined text-[14px] text-primary">directions_boat</span>
+            Kapal Cruise Tomok
+          </span>
+<span class="inline-flex items-center gap-1 bg-surface-container-high text-on-surface px-2 py-0.5 rounded font-body-sm text-[11px]">
+<span class="material-symbols-outlined text-[14px] text-primary">hotel</span>
+            Resort Tepi Danau
+          </span>
+<span class="inline-flex items-center gap-1 bg-surface-container-high text-on-surface px-2 py-0.5 rounded font-body-sm text-[11px]">
+<span class="material-symbols-outlined text-[14px] text-primary">theater_comedy</span>
+            Sigale-gale Dance
+          </span>
+</div>
+<div class="pt-2 flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-on-surface-variant">Mulai dari</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-sm text-primary font-bold">Rp 2.100.000</span>
+<span class="font-label-sm text-outline">/pax</span>
+</div>
+</div>
+<button class="px-4 py-2.5 rounded-full bg-primary text-on-primary font-label-md hover:bg-primary-container active:scale-95 transition-all shadow-sm flex items-center gap-1 cursor-pointer" onclick="pushDetail('pkg-005', 'Pesona Danau Toba &amp; Samosir Heritage 3H2M', 2100000)" type="button">
+<span>Lihat Detail</span>
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</article>
+</section>
+<!-- Interactive Toast Feedback for Logout and Navigation actions -->
+<div class="fixed top-20 inset-x-4 z-50 transform -translate-y-24 opacity-0 transition-all duration-300 pointer-events-none flex justify-center" id="toast-notification">
+<div class="bg-inverse-surface text-inverse-on-surface px-4 py-3 rounded-xl shadow-lg flex items-center gap-2 max-w-sm w-full">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]" id="toast-icon">info</span>
+<span class="font-body-md flex-1" id="toast-message">Aksi berhasil dilakukan</span>
+</div>
+</div>
+<!-- Logout Confirmation Modal Dialog -->
+<div class="fixed inset-0 z-50 bg-black/50 backdrop-blur-xs flex items-center justify-center p-margin hidden" id="logout-dialog">
+<div class="bg-surface-container-lowest rounded-xl max-w-xs w-full p-5 shadow-2xl flex flex-col items-center text-center gap-3">
+<div class="w-12 h-12 rounded-full bg-error-container text-on-error-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[26px]">logout</span>
+</div>
+<div class="flex flex-col gap-1">
+<h4 class="font-title-md text-on-surface font-bold">Keluar dari Akun?</h4>
+<p class="font-body-sm text-on-surface-variant">Anda dapat masuk kembali kapan saja untuk melanjutkan pemesanan petualangan.</p>
+</div>
+<div class="flex items-center gap-2 w-full mt-2">
+<button class="flex-1 py-2 rounded-full bg-surface-container text-on-surface font-label-md active:scale-95 transition-transform" id="cancel-logout-btn" type="button">
+          Batal
+        </button>
+<button class="flex-1 py-2 rounded-full bg-error text-on-error font-label-md active:scale-95 transition-transform" id="confirm-logout-btn" type="button">
+          Keluar
+        </button>
+</div>
+</div>
+</div>
+<script>
+    // Navigation routing simulation compliant with requirement: pushNamed('/detail', arguments: {id, title, price})
+    window.pushDetail = function(id, title, price) {
+      const payload = { id: id, title: title, price: price };
+      
+      // Trigger flutter/in-app bridge if present, else trigger visual toast
+      if (window.flutter_inappwebview && window.flutter_inappwebview.callHandler) {
+        window.flutter_inappwebview.callHandler('pushNamed', '/detail', payload);
+      } else {
+        console.log("Navigating to: /detail with arguments:", payload);
+        showToast("Membuka detail: " + title, "travel_explore");
+      }
+    };
+
+    function showToast(message, icon = 'info') {
+      const toast = document.getElementById('toast-notification');
+      const toastMessage = document.getElementById('toast-message');
+      const toastIcon = document.getElementById('toast-icon');
+
+      if (!toast) return;
+      toastMessage.textContent = message;
+      toastIcon.textContent = icon;
+      
+      toast.classList.remove('-translate-y-24', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('-translate-y-24', 'opacity-0');
+      }, 2600);
+    }
+
+    // Modal and Logout Logic
+    const logoutBtn = document.getElementById('logout-btn');
+    const logoutDialog = document.getElementById('logout-dialog');
+    const cancelLogoutBtn = document.getElementById('cancel-logout-btn');
+    const confirmLogoutBtn = document.getElementById('confirm-logout-btn');
+
+    if (logoutBtn && logoutDialog) {
+      logoutBtn.addEventListener('click', () => {
+        logoutDialog.classList.remove('hidden');
+      });
+
+      cancelLogoutBtn.addEventListener('click', () => {
+        logoutDialog.classList.add('hidden');
+      });
+
+      confirmLogoutBtn.addEventListener('click', () => {
+        logoutDialog.classList.add('hidden');
+        showToast("Berhasil keluar dari akun", "check_circle");
+        if (window.flutter_inappwebview && window.flutter_inappwebview.callHandler) {
+          window.flutter_inappwebview.callHandler('pushReplacementNamed', '/login');
+        }
+      });
+    }
+
+    // Filter by search input
+    const searchInput = document.getElementById('search-input');
+    const tourCards = document.querySelectorAll('.tour-card');
+
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        const query = e.target.value.toLowerCase().trim();
+        tourCards.forEach(card => {
+          const title = (card.getAttribute('data-title') || '').toLowerCase();
+          if (title.includes(query)) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    }
+
+    // Category chips visual toggle
+    const chips = document.querySelectorAll('.category-chip');
+    chips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        chips.forEach(c => {
+          c.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+          c.classList.add('bg-surface-container-low', 'text-on-surface');
+        });
+        chip.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+        chip.classList.remove('bg-surface-container-low', 'text-on-surface');
+      });
+    });
+  </script>
+</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.05)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-16 px-space-xs"><a aria-current="page" class="flex flex-col items-center justify-center gap-1 min-w-[64px] min-h-[44px] py-1 transition-colors text-primary font-bold" data-path="beranda" href="#"><span class="material-symbols-outlined text-[22px]">home</span><span class="font-label-sm text-inherit">Beranda</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[64px] min-h-[44px] py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="eksplorasi" href="#"><span class="material-symbols-outlined text-[22px]">explore</span><span class="font-label-sm text-inherit">Eksplorasi</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[64px] min-h-[44px] py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="pesanan" href="#"><span class="material-symbols-outlined text-[22px]">confirmation_number</span><span class="font-label-sm text-inherit">Pesanan</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[64px] min-h-[44px] py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="profil" href="#"><span class="material-symbols-outlined text-[22px]">person</span><span class="font-label-sm text-inherit">Profil</span></a></div></nav></body></html>
